@@ -9,6 +9,16 @@ create your own robo-investor or trading algorithm, and improve your programming
 
 To join our Slack channel where you can discuss trading and coding, click the link https://join.slack.com/t/robin-stocks/shared_invite/zt-7up2htza-wNSil5YDa3zrAglFFSxRIA
 
+Install From Local Checkout:
+============================
+.. code-block::
+   sudo apt-get install pip
+   git clone git@github.com:liveusr/robin_stocks.git
+   cd robin_stocks
+   pip install . --break-system-packages
+   export PATH=$PATH:/home/linux/.local/bin
+   echo "export PATH=\$PATH:/home/linux/.local/bin" >> ~/.bashrc
+
 Supported APIs
 ==============
 The supported APIs are Robinhood, Gemini, and TD Ameritrade. For more information about how to use the different APIs, visit the README
