@@ -557,8 +557,8 @@ def get_stock_historicals(inputSymbols, interval='hour', span='week', bounds='re
     if bounds not in bounds_check:
         print('ERROR: Bounds must be "extended","regular",or "trading"', file=get_output())
         return([None])
-    if (bounds == 'extended' or bounds == 'trading') and span != 'day':
-        print('ERROR: extended and trading bounds can only be used with a span of "day"', file=get_output())
+    if (bounds == 'extended' or bounds == 'trading') and span != 'day' and span != 'week':
+        print('ERROR: extended and trading bounds can only be used with a span of "day" or "week"', file=get_output())
         return([None])
 
     symbols = inputs_to_set(inputSymbols)
